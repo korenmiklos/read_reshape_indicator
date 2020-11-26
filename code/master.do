@@ -11,3 +11,4 @@ do code/read_reshape_indicator.do gdp gdp_per_capita "GDP per capita"
 do code/read_reshape_indicator.do pop population "Population"
 do code/compute_distance_to_USA.do
 do code/create_analysis_sample.do
+do code/regress_gdp_on_distance.do
