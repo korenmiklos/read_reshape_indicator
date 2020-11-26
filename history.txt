@@ -1,0 +1,100 @@
+  491  rm ../data/derived/hemingway.csv 
+  492  python Word_counter.py 
+  493  ls -aFl ../data/derived/
+  494  pwd
+  495  python
+  496  python
+  497  pwd
+  498  clear
+  499  pwd
+  500  jupyter lab
+  501  clear
+  502  cd Downloads/dc-economics-v2.1
+  503  ls
+  504  ls -aFl
+  505  ls -aFl code/
+  506  git status
+  507  git init
+  508  ls -aFl
+  509  git status
+  510  git log
+  511  git add code/read_reshape_gdp.do 
+  512  git status
+  513  git commit -m "Add read_reshape_gdp"
+  514  cat code/read_reshape_gdp.do 
+  515  git push
+  516  git log
+  517  git status
+  518  git diff
+  519  git add code/read_reshape_gdp.do 
+  520  git commit -m "Set parameters in local macros"
+  521  git log
+  522  git diff
+  523  git mv code/read_reshape_gdp.do code/read_reshape_indicator.do
+  524  git status
+  525  git diff
+  526  git add code/read_reshape_indicator.do 
+  527  git status
+  528  git commit -m "Use .do file parameter passing"
+  529  git diff
+  530  git add code/read_reshape_indicator.do 
+  531  git commit -m "Use args parsing"
+  532  git log
+  533  stata -b do code/read_reshape_indicator.do gdp gdp_per_capita "GDP per capita"
+  534  ls -aFl
+  535  ls -aFl data/derived/
+  536  stata -b do code/read_reshape_indicator.do gdp new_gdp "GDP per capita"
+  537  ls -aFl data/derived/
+  538  git status
+  539  git log
+  540  git remote add origin git@github.com:korenmiklos/read_reshape_indicator.git
+  541  git push
+  542  git push --set-upstream origin master
+  543  pwd
+  544  ls /Users/koren/Library/Application Support/Stata/ado/plus/
+  545  ls "/Users/koren/Library/Application Support/Stata/ado/plus/"
+  546  ls "/Users/koren/Library/Application Support/Stata/ado/plus/r/"
+  547  less "/Users/koren/Library/Application Support/Stata/ado/plus/r/reghdfe.mata"
+  548  less "/Users/koren/Library/Application Support/Stata/ado/plus/r/reghdfe_projections.mata"
+  549  pwd
+  550  ls -aFl
+  551  mv install.do code/
+  552  git add code/install.do 
+  553  git commit -m "Add two packages"
+  554  mv code/master.do code/master_reshape.do
+  555  ls -aFl code/
+  556  git status
+  557  git add code/compute_distance_to_USA.do 
+  558  git commit -m "Compute distance to USA"
+  559  git add code/create_analysis_sample.do 
+  560  git commit -m "Create analysis sample"
+  561  git status
+  562  git add code/master.do
+  563  git commit -m "Add master script"
+  564  git log
+  565  history
+  566  git status
+  567  git diff
+  568  git add code/create_analysis_sample.do 
+  569  git commit -m "Save log variables"
+  570  git push
+  571  history
+  572  git status
+  573  git diff
+  574  git add code/master.do code/install.do 
+  575  git commit -m "Add ftools as a dependency"
+  576  git push
+  577  ls -aFl output/
+  578  less output/regression.txt 
+  579  ls -aFl output/
+  580  ls -aFl output/
+  581  less output/distance_gdp_scatter.gph 
+  582  ls -aFl output/
+  583  open output/distance_gdp_scatter.pdf 
+  584  git status
+  585  git add output/
+  586  git add code/regress_gdp_on_distance.do 
+  587  git add code/master.do 
+  588  git commit -m "Save regression results"
+  589  history
+  590  history | tail -n100 > history.txt
