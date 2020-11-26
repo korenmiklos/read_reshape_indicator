@@ -1,7 +1,7 @@
 * run this from root folder of projects so that code can called from code/...
 * and data can be read from data/...
 
-* we use reghdfe and outreg2
+* we use ftools, reghdfe and outreg2
 * if you don't have these, uncomment and run next code once
 
 * do code/install.do
